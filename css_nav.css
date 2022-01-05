@@ -84,6 +84,7 @@ a
     right: 20px;
     top: 20px;
     position: absolute;
+    padding: 10px;
 }
 
 
@@ -102,14 +103,15 @@ a
     position: fixed;
     display: none;
 }
+.nav-mobile-ouvrir{
+    display: flex;
+    }
 
 @media (min-width:480px) {
     .nav-mobile{
         display: none;
     }
-    .nav-mobile-ouvrir{
-    display: flex;
-    }
+    
 }
 
 .nav-mobile ul{
