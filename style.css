@@ -13,7 +13,7 @@ body
     padding: 0 10%;
 
 }
-@media(max-width: 580px) 
+@media(max-width: 480px) 
 
 {
     body
@@ -39,12 +39,11 @@ body
     
 }
 
-@media(max-width: 580px) 
+@media(max-width: 480px) 
 {
    .sec {
-       height: 152vh;
+       height: 50vh;
        padding: 0 5%;
-       width: 650px;
     }
 
 }
@@ -58,36 +57,21 @@ body
     
 }
 
-.gallery_ex .test
+.gallery_ex
 {  
-    width: 250px;
-    height: 300px;
-    background-color: rgb(249, 249, 253);
-    border-radius: 10px;
-    margin-top: 15px;
-    display: flex;
     flex-direction: column;
-    align-items:center;
-    gap: 10px;
+    display: flex;
+    gap: 5px;
 }
-@media (max-width: 580px) 
-{
-    .gallery_ex .test
-{  
-    width: 575px;
-}
-}
+
 .sec_2
 {   
     margin-top: 20px;
-    margin-left: 50px;
-    margin-right:50px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
     gap: 10px;
-
+    grid-template-columns: repeat(4, 1fr);
 }
-@media (max-width: 580px) 
+@media (max-width: 480px) 
 {
     .sec_2
     {
@@ -98,10 +82,10 @@ body
 }
 .img_sec
 {
-    width: 250px;
-    border-radius: 10px;
-   
-
+    border-radius: 10px
+    width: 100%;
+    object-fit: cover;
+    width: 100%;
 }
 .marque
 {
@@ -141,34 +125,30 @@ body
     font-size: 50px;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    margin-left: 30%;
     margin-top: 40px;
 }
-@media(max-width:580px)
-{
-    .about_us
-    {
-        width: 590px;
-       
+
+@media(max-width: 480px){
+    .about_us{
+        font-size: 30px;
+        text-align:center;
     }
 }
+
 .section_3
 {
     margin-top: 30px;
-    margin-left: 50px;
-    margin-right:50px;
     display: flex;
     flex-direction: row;
     gap: 10px;
     
 }
-@media(max-width:580px)
+@media(max-width:480px)
 {
     .section_3
     {
     display: flex;
     flex-direction:column;
-    width:50px;
 }
 }
 
@@ -180,17 +160,16 @@ body
         gap: 20px;
         text-align: center;
         align-items:center;
-        width: 350px;
         height: 350px;
         background-color: rgb(249, 249, 253);
 }
-@media(max-width:580px)
+@media(max-width:480px)
 {
     .section_3 div
 {   
-        width: 596px;
         height: 260px;
         gap:10px;
+        padding: 10px;
 }
 }
 
