@@ -1,0 +1,49 @@
+main
+{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center;*/
+     width: 100%; 
+    max-height: 100%; 
+   
+
+}
+form
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+   
+}
+span
+{
+    
+}
+select
+{
+  
+    
+}
+label
+{
+   display: flex;
+   flex-direction: column;
+   width: 200px;
+   text-align: center;
+}
+form div
+{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.popup
+{
+    background-color: darkblue;
+}

@@ -1,4 +1,4 @@
-console.log("bonjour")
+
 
 const form = document.querySelector("form");
 const formNew = form.querySelector(".new");
@@ -17,6 +17,7 @@ let typeDeBoiteVitesse = "";
 
 //  creation result popup
 const popup = document.createElement("div");
+popup.classList.add("popup");
 
 
 // creation boite vitesse
@@ -82,11 +83,7 @@ form.addEventListener("submit", (event) => {
 })
 
 //  type de vehicule
-typeDeVehicules.addEventListener("change", () => {
-    typeDeVehicule = typeDeVehicules.value
-    creerCariburant();
-    creerBoiteVitesse();
-})
+
 
 // creation de carburant
 const carburantLabel = document.createElement("label");
@@ -133,6 +130,16 @@ function creerBoiteVitesse() {
         boiteVitesse.appendChild(boiteVitesseData)
     }
 }
+
+
+const selection = () => {
+    typeDeVehicule = typeDeVehicules.value
+    creerCariburant();
+    creerBoiteVitesse();
+}
+
+selection();
+typeDeVehicules.addEventListener("change", selection)
 
 const btn = document.createElement("button")
 btn.innerHTML = `<i class="fas fa-times"></i>`

@@ -12,11 +12,8 @@ body
     
 
 }
-@media (max-width:580px) {
-    body
-    {
-       width: 685px;
-    };
+@media (max-width:480px) {
+   
     
 }
 
@@ -27,6 +24,17 @@ form
     align-items: center;
     margin-bottom: 40px;
    
+
+   
+    
+}
+@media (max-width:480px)
+{
+    form
+    {
+        gap: 8px;
+    } 
+   
     
 }
 input
@@ -36,12 +44,30 @@ input
     border-radius: 0.5rem;
     border:1px solid rgba(34, 33, 31, 0.2);
 }
+@media (max-width:480px)
+{
+    input
+    {
+        width:80% ; 
+    } 
+   
+    
+}
 textarea
 {
     width:50% ;
     height: 120px;
     border-radius: 0.5rem;
     border:1px solid rgba(34, 33, 31, 0.2);
+}
+@media (max-width:480px)
+{
+    textarea
+    {
+        width:80% ; 
+    } 
+   
+    
 }
 .contact
 {
